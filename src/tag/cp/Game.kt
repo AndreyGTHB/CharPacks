@@ -4,12 +4,17 @@ import tag.cp.gameobjects.*
 
 object Game {
     fun init() {
-        println("Hello!")
+        // Name block
         do {
-            println("Please enter your name")
+            print("Please enter your name: ")
             User.name = readLine() ?: ""
         } while(User.name.isBlank())
 
+        // Rules block
+        println("Hi ${User.name}!\nWelcome to CharPack planet.\nHere you can get characters and send them into battle. GLHF!")
+    }
+
+    fun checkCommand(command: String) {
 
     }
 }
